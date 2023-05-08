@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+}
+.item1 { grid-area: daniel; }
+.item2 { grid-area: jonathan; }
+.item3 { grid-area: kira; }
+.item4 { grid-area: jeanette; }
+.item5 { grid-area: patrick; }
+body{
+    background-color: rgb(234, 245, 249);
+}
+.grid-container{
+    
+    display: grid;
+    grid-template-areas: 'daniel daniel jonathan kira'
+                        'jeanette patrick patrick kira';
+    gap: 10px;
+    background-color: rgb(234, 245, 249);
+    padding: 10px;
+    width:90%;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.grid-container > div {
+    border-radius:5px ;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 12px;
+    margin:10px;
+  }
+  h5{
+    padding-top:7px;
+  }
+  h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+.item1{
+    background-color: rgb(108, 34, 200);
+    color: white;
+}
+.item2{
+    background-color:rgb(47, 44, 44);
+    color: white;
+}
+.item3{
+    background-color: white;
+}
+.item3 >p,.item4 > p{
+    color:rgb(124, 123, 123);
+}
+.item4{
+    background-color: white;
+}
+.item5{
+    background-color: rgb(6, 6, 42);
+    color: white;
+}
+.item1head{
+    width:140px;
+    height:35px;
+    padding:10px;
+    text-align: center;
+    
+}
+.item1head > p{
+    color:rgb(172, 172, 172);
+}
+.item1head img{
+    float:left;
+    width:35px;
+    height:35px;
+    border-radius: 35px;
+    
+}
